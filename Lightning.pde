@@ -50,27 +50,10 @@ void draw()
     strokeWeight(4);
     stroke(195 + (int)randColor1, 35 + (int)randColor1, 235 + (int)randColor1);
     line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
-    //offshoots of lightning
-    if (Math.random() > .6)
-    {
-      filter(BLUR,2);
-      int fork1 = (int)(29* Math.random()) -15;
-      int fork2 = (int)(29* Math.random()) -15;
-      strokeWeight(2);
-      line(coordList[b],coordList[b+1], coordList[b] + fork1, coordList[b+1] + fork2);
-      line( coordList[b] + fork1, coordList[b+1] + fork2, coordList[b] + (int)(19* Math.random()) -10, coordList[b+1] + (int)(19* Math.random()) -10);
-      strokeWeight(1);
-      filter(BLUR,0);
-      fill(250,250,250);
-      line(coordList[b],coordList[b+1], coordList[b] + fork1, coordList[b+1] + fork2);
-      line( coordList[b] + fork1, coordList[b+1] + fork2, coordList[b] + (int)(19* Math.random()) -10, coordList[b+1] + (int)(19* Math.random()) -10);
-      strokeWeight(4);
-      stroke(195 + (int)randColor1, 35 + (int)randColor1, 235 + (int)randColor1);
-    }
-  filter( BLUR,0);
-  strokeWeight(1);
-  stroke(250,250,250);
-  line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
+    filter( BLUR,0);
+    strokeWeight(1);
+    stroke(250,250,250);
+    line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
   }
   filter( BLUR,0);
   noStroke();
