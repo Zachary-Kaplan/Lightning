@@ -10,7 +10,6 @@ int a = 0;
 void setup()
 {
   size(300,350);
-frameRate(12);
   strokeWeight(4);
   stroke(144, 31, 242);
   background(5,5,25);
