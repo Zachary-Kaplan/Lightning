@@ -10,13 +10,13 @@ int a = 0;
 void setup()
 {
   size(300,350);
+frameRate(12);
   strokeWeight(4);
   stroke(144, 31, 242);
   background(5,5,25);
 }
 void draw()
 {
-  delay(200);
   resetTime();
   //coordinate generator
   while(endY <= 300)
