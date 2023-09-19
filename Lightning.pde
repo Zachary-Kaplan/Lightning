@@ -50,6 +50,9 @@ void draw()
     strokeWeight(4);
     stroke(195 + (int)randColor1, 35 + (int)randColor1, 235 + (int)randColor1);
     line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
+    filter( BLUR,0);
+    line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
+    filter( BLUR,0.001);
     //offshoots of lightning
     if (Math.random() > .6)
     {
@@ -67,14 +70,12 @@ void draw()
       strokeWeight(4);
       stroke(195 + (int)randColor1, 35 + (int)randColor1, 235 + (int)randColor1);
     }
+  filter( BLUR,0);
+  strokeWeight(1);
+  stroke(250,250,250);
+  line(coordList[d],coordList[d+1],coordList[d+2],coordList[d+3]);
   }
   filter( BLUR,0);
-  for (int d = 0; d <coordList.length - 3; d = d+2)
-  {
-    strokeWeight(1);
-    stroke(250,250,250);
-    line(coordList[d],coordList[d+1],coordList[d+2],coordList[d+3]);
-  }
   noStroke();
   fill(156, 151, 161);
   ellipse(150,15,90,30);
