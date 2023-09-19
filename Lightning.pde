@@ -55,7 +55,7 @@ void draw()
     stroke(250,250,250);
     line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
   }
-  filter( BLUR,0);
+  filter( BLUR,0.00000000000001);
   noStroke();
   fill(156, 151, 161);
   ellipse(150,15,90,30);
