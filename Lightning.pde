@@ -37,8 +37,6 @@ void draw()
     endX = startX + (int)tempX;
   }
     
-    System.out.println(tempY);
-    System.out.println(tempX);
     appendItem(endX,endY,coordList);
     startX = endX;
     startY = endY;
