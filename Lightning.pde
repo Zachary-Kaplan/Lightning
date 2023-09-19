@@ -14,6 +14,7 @@ void setup()
   stroke(144, 31, 242);
   background(5,5,25);
 }
+
 void draw()
 {
   resetTime();
@@ -35,7 +36,6 @@ void draw()
   } else if (endX == 150) {
     endX = startX + (int)tempX;
   }
-    
     appendItem(endX,endY,coordList);
     startX = endX;
     startY = endY;
@@ -51,7 +51,7 @@ void draw()
     stroke(195 + (int)randColor1, 35 + (int)randColor1, 235 + (int)randColor1);
     line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
     filter( BLUR,0);
-    strokeWeight(1);
+    strokeWeight(2);
     stroke(250,250,250);
     line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
   }
