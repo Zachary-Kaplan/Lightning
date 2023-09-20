@@ -52,10 +52,12 @@ void draw()
     line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3])
   }
   filter( BLUR,0);
-  filter( BLUR,0);
+  for(int b = 0; b <coordList.length - 3; b = b + 2)
+  {
   strokeWeight(2);
   stroke(250,250,250);
   line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
+  }
   noStroke();
   fill(156, 151, 161);
   ellipse(150,15,90,30);
