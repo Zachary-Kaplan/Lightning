@@ -49,13 +49,13 @@ void draw()
     filter( BLUR,0.001);
     strokeWeight(4);
     stroke(195 + (int)randColor1, 35 + (int)randColor1, 235 + (int)randColor1);
-    line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
-    filter( BLUR,0);
-    strokeWeight(2);
-    stroke(250,250,250);
-    line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
+    line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3])
   }
-  filter( BLUR,0.00000000000001);
+  filter( BLUR,0);
+  filter( BLUR,0);
+  strokeWeight(2);
+  stroke(250,250,250);
+  line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3]);
   noStroke();
   fill(156, 151, 161);
   ellipse(150,15,90,30);
