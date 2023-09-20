@@ -46,8 +46,8 @@ void draw()
     randColor1 = (Math.random() * 21)-10;
     randColor2 = (Math.random() * 21)-10;
     randColor3 = (Math.random() * 21)-10;
-    filter( BLUR,0.001);
-    strokeWeight(4);
+    filter( BLUR,0.1);
+    strokeWeight(6);
     stroke(195 + (int)randColor1, 35 + (int)randColor1, 235 + (int)randColor1);
     line(coordList[b],coordList[b+1],coordList[b+2],coordList[b+3])
   }
